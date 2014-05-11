@@ -1,0 +1,23 @@
+{
+  "name": "wombs-audio-user-audio",
+  "version": "0.0.0",
+  "description": "getting userMedia auio",
+  "main": "wombs-audio-user-audio.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cabbibo/wombs-audio-user-audio"
+  },
+  "keywords": [
+    "web-audio",
+    "user-media"
+  ],
+  "author": "@cabbibo",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/cabbibo/wombs-audio-user-audio/issues"
+  },
+  "homepage": "https://github.com/cabbibo/wombs-audio-user-audio"
+}
