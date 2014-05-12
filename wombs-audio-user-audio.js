@@ -1,13 +1,11 @@
 
 
   var _         = require( 'underscore'             ); 
- 
   var Component = require( 'wombs-audio-component'  );
-  var Texture   = require( 'wombs-audio-texture'    );
   
-  var mutate = {};
+  var mutation = {};
 
-  mutate.detect = function(){
+  mutation.detect = function(){
       
       navigator.getUserMedia =  
         navigator.getUserMedia        || 
@@ -20,10 +18,10 @@
 
   }
 
-  mutate.beginLoad = function(){}
-  mutate.endLoad = function(){}
+  mutation.beginLoad = function(){}
+  mutation.endLoad = function(){}
 
-  mutate.successCallback = function( stream ){
+  mutation.successCallback = function( stream ){
    
     console.log( 'stream succeed' );
     this.source = this.ctx.createMediaStreamSource( stream );
@@ -33,7 +31,7 @@
 
   }
   
-  mutate.errorCallback = function(){
+  mutation.errorCallback = function(){
     this.onError( 'Stream Failed' );
   }
 
@@ -47,7 +45,7 @@
 
   UserAudio.prototype = _.extend( 
     Component.prototype,
-    mutate
+    mutation
   );
 
   function UserAudio( controller , params ){
